@@ -1184,10 +1184,6 @@ a {
   margin-bottom: 50px;
 }
 
-.filter__item {
-  display: contents;
-}
-
 .filter__button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -1222,11 +1218,15 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    margin-top: -15px;
   }
-  .filter__button {
+  .filter__item {
+    margin-top: 15px;
     margin-right: 8px;
-    margin-bottom: 15px;
+  }
+  .filter__item:last-child {
+    margin-right: 0;
   }
 }
 

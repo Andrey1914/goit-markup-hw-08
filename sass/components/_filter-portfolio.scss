@@ -6,9 +6,9 @@
   margin-bottom: 50px;
   // width: 611px;
 
-  &__item {
-    display: contents;
-  }
+  // &__item {
+  //   display: contents;
+  // }
 
   &__button {
     font-family: $primary-font;
@@ -40,12 +40,18 @@
   .filter {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 25px; 
+    margin-bottom: 40px; 
+    margin-top: -15px;
 
-    &__button {
+    &__item {
+      margin-top: 15px;
       margin-right: 8px;
-      margin-bottom: 15px;
     }
+
+    &__item:last-child {
+      margin-right: 0;
+    }
+
   }
 }
 
