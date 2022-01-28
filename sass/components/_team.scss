@@ -1,5 +1,5 @@
 .container {
-  width: 1200px;
+  // width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -22,16 +22,16 @@
     margin-bottom: 50px;
   }
 
-  &__list {
-    display: flex;
-  }
+  // &__list {
+  //   display: flex;
+  // }
 
-  &__item {
-    margin-right: 30px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+  // &__item {
+  //   margin-right: 30px;
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
+  // }
 
   &__info {
     padding-top: 30px;
@@ -61,4 +61,27 @@
     color: $text-color;
     margin-bottom: 16px;
   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team {
+    &__title {
+      font-size: 28px;
+      line-height: 1.17;
+      margin-bottom: 30px;
+    }
+
+    &__info {
+      padding-bottom: 24px;
+    }
+
+    &__item {
+      margin-bottom: 30px;
+    }
+
+    &__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+
 }

@@ -55,7 +55,14 @@
       fill: $color-of-headers;
       transition: fill 250ms $timing-function;
     }
-  }  
+  } 
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .form {
@@ -133,6 +140,19 @@
     }
   }
 
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &__label {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.03em;
+      color: $text-color;
+    }
+
+    &__label--text {
+      margin-bottom: 0;
+    }
+  }
+
   &__comment {
     display: flex;
     flex-direction: column;
@@ -195,6 +215,12 @@
     }
   }
 
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &__icon-checkbox {
+      margin-right: 8px;
+    }
+  }
+
   &__checkbox-input:checked + &__icon-checkbox {
     background-color: $accent-color;
     border-color: transparent;
@@ -208,6 +234,13 @@
   &__agree-link {
     text-decoration-line: underline;
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &__checkbox {
+      width: 370px;
+      height: 15px;
+    }
   }
 }
 

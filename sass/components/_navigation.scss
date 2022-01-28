@@ -50,3 +50,9 @@
     }
   }
 }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container-nav, .site-nav {
+    display: none;
+  }
+}

@@ -82,3 +82,9 @@
     fill: $accent-color;
   }
 }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container-contact, .contact-info {
+    display: none;
+  }
+}

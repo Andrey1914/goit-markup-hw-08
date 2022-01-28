@@ -2,16 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc(100% / 4);
-  list-style: none;
-  padding: 0;
 
   &__item {
-    margin-right: 30px;
+    // margin-right: 30px;
     width: 270px;
 
-    &:last-child {
-      margin-right: 0;
-    }
+    // &:last-child {
+    //   margin-right: 0;
+    // }
   }
 
   &__background-icon {
@@ -40,11 +38,30 @@
     margin-bottom: 10px;
   }
 
+  @media screen and (min-width: 480px) and (max-width: 767px){
+    &__title {
+      text-align: center;
+    }
+  }
+
   &__text {
     font-family: $primary-font;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $text-color;
+  }
+}
+
+.experience {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &__item {
+      width: 450px;
+      margin-bottom: 30px;
+    }
+
+    &__item:last-child {
+      margin-bottom: 0;
+    }
   }
 }

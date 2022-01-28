@@ -4,17 +4,17 @@
     margin-bottom: 50px;
   }
 
-  &__list {
-    display: flex;
-  }
+  // &__list {
+  //   display: flex;
+  // }
 
-  &__item {
-    margin-right: 30px;
+  // &__item {
+  //   margin-right: 30px;
 
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
+  // }
 
   &__link {
     display: flex;
@@ -49,6 +49,29 @@
     &:hover .clients__label,
     &:focus .clients__label {
       fill: $accent-color;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients {
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    &__item {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+
+    &__link {
+      width: 210px;
     }
   }
 }

@@ -24,7 +24,7 @@
   }
 
   &--subscription {
-    position: absolute;
+    // position: absolute;
     top: 48px;
     right: 0;
     margin-left: 12px;
@@ -36,5 +36,12 @@
     width: 24px;
     height: 24px;
     margin-left: 10px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &--subscription {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
