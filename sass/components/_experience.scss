@@ -65,3 +65,15 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .experience {
+    margin: -15px;
+    
+    &__item {
+      flex-basis:  calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+      width: 354px;
+    }
+  }
+}

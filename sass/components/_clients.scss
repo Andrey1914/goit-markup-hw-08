@@ -1,7 +1,7 @@
 .clients {
   &__title {
     text-align: center;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
   }
 
   // &__list {
@@ -72,6 +72,28 @@
 
     &__link {
       width: 210px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    &__item {
+      width: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
+    &__link {
+      width: 226px;
     }
   }
 }
