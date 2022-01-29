@@ -21,6 +21,53 @@
         <div class="container"> 
             <div class="container-hedear">
                 <a href="./index.html" class="logo"><span class="logo__text">Web</span>Studio</a>
+                <button data-menu-btn type="button" class="menu-btn is-open" aria-expanded="false">
+                    <svg class="btn-close-menu" width="40" aria-controls="menu-container" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                        <use class="icon-cross" href="./images/icons.svg#icon-close-menu"></use>
+                    </svg>
+                </button>
+                <div class="menu-container is-open" id="menu-container" data-menu>
+                    <ul class="menu-nav">
+                        <li>
+                            <a href="./index.html">Студия</a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul class="menu-contact">
+                        <li>
+                            <a href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="">Instagram</a>
+                        </li>
+
+                        <li>
+                            <a href="">Twitter</a>
+                        </li>
+
+                        <li>
+                            <a href="">Facebook</a>
+                        </li>
+
+                        <li>
+                            <a href="">LinkedIn</a>
+                        </li>
+
+                    </ul>
+                </div>
                 <div class="container-nav">
                     <ul class="site-nav">
                         <li class="site-nav__item">
@@ -41,14 +88,14 @@
                     <ul class="contact-info">
                         <li class="contact-info__item">
                             <a class="contact-info__link" href="mailto:info@devstudio.com">
-                                <svg class="contact-info__mail-icon">
+                                <svg class="contact-info__mail-icon" width="16" heigth="12">
                                     <use href="./images/icons.svg#icon-envelope"></use>
                                 </svg>info@devstudio.com
                             </a> 
                         </li>
                         <li class="contact-info__item">
                             <a class="contact-info__link" href="tel:+380961111111">
-                                <svg class="contact-info__phone-icon">
+                                <svg class="contact-info__phone-icon" width="10" height="16">
                                     <use href="./images/icons.svg#icon-smartphone"></use>
                                 </svg>+38 096 111 11 11
                             </a>
@@ -64,14 +111,14 @@
         <!-- hero -->
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button data-modal-open type="button" class="btn">Заказать услугу</button>
             
             </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button class="btn-close" data-modal-close>
-                        <svg class="btn-close__icon">
+                        <svg class="btn-close__icon" width="30" heigth="30">
                             <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
@@ -81,7 +128,7 @@
                             <li class="form__item">
                                 <label for="name" class="form__label">Имя</label>
                                 <input class="form__input" type="text" name="name" id="name">
-                                <svg class="form__input-icon">
+                                <svg class="form__input-icon" width="18" heigth="18">
                                     <use href="./images/icons.svg#icon-person-black"></use>
                                 </svg>
                             </li>
@@ -89,7 +136,7 @@
                             <li class="form__item">
                                 <label for="tel" class="form__label">Телефон</label>
                                 <input class="form__input" type="tel" name="tel" id="tel">
-                                <svg class="form__input-icon">
+                                <svg class="form__input-icon" width="18" heigth="18">
                                     <use href="./images/icons.svg#icon-phone-black"></use>
                                 </svg>
                             </li>
@@ -97,7 +144,7 @@
                             <li class="form__item">
                                 <label for="mail" class="form__label">Почта</label>
                                 <input class="form__input" type="email" name="mail" id="mail">
-                                <svg class="form__input-icon">
+                                <svg class="form__input-icon" width="18" heigth="18">
                                     <use href="./images/icons.svg#icon-email-black"></use>
                                 </svg>
                             </li>
@@ -109,7 +156,7 @@
                         
                         <div class="form__checkbox">
                             <input class="form__checkbox-input" type="checkbox" name="agree" value="agree" id="agree">
-                            <svg class="form__icon-checkbox">
+                            <svg class="form__icon-checkbox" width="16" heigth="15">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                             <label class="form__label form__label--text" for="agree">Соглашаюсь с рассылкой и принимаю <a class="form__agree-link" href="">Условия договора</a></label>
@@ -500,5 +547,6 @@
 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
