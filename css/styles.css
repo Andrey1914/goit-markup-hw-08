@@ -180,16 +180,6 @@ a {
   color: var(--accent-color);
 }
 
-.contact-info__mail-icon {
-  width: 16px;
-  height: 12px;
-}
-
-.contact-info__phone-icon {
-  width: 10px;
-  height: 16px;
-}
-
 .contact-info__mail-icon,
 .contact-info__phone-icon {
   fill: var(--text-color);
@@ -392,8 +382,6 @@ a {
   position: absolute;
   bottom: 11px;
   left: 12px;
-  width: 18px;
-  height: 18px;
   fill: #212121;
   transition: fill 250ms var(--timing-function);
 }
