@@ -26,3 +26,6 @@ a {
   border-radius: 3px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}

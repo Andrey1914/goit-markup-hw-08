@@ -84,6 +84,14 @@
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .cardset {
+    &__link {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cardset {
     display: flex;

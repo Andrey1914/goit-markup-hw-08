@@ -60,6 +60,12 @@
 } 
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
+  .backdrop {
+    z-index: 3;
+    padding: 93px 15px;
+    overflow-y: scroll;
+  }
+
   .modal {
     width: 450px;
     height: 609px;
