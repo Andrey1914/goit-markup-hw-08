@@ -1,0 +1,17 @@
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+      width: 768px;
+    }
+  
+    .container-hedear {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .menu-btn {
+      display: none;
+    }
+  }

@@ -1,7 +1,7 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
     .menu-container {
         display: none;
-        // z-index: 2;
+        z-index: 2;
     
         background-color: $page-bg-color;
         position: absolute;
@@ -11,9 +11,9 @@
         height: 796px;
         padding: 48px 40px;
     
-        // &.is-open {
-        //     display: block;
-        // }
+        &.is-open {
+            display: block;
+        }
 
         .menu-nav {
             margin-bottom: 302px;
@@ -98,5 +98,11 @@
 
             
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-container{
+        display: none;
     }
 }
