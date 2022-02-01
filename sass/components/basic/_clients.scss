@@ -1,0 +1,41 @@
+.clients {
+  &__title {
+    text-align: center;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 170px;
+    height: 92px;
+    transition: border 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+
+    .clients__label {
+      fill: #afb1b8;
+      width: 106px;
+      height: 60px;
+      transition: fill 250ms $timing-function;
+
+      &:hover,
+      &:focus {
+        fill: $accent-color;
+      }
+    }
+
+    &:hover .clients__label,
+    &:focus .clients__label {
+      fill: $accent-color;
+    }
+  }
+}

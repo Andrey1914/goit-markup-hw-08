@@ -1,0 +1,11 @@
+@media screen and (min-width: 1200px) {
+  .container-contact {
+    margin-left: auto;
+  }
+  
+  .contact-info {
+    &__item {
+      margin-right: 50px;
+    }
+  }
+}

@@ -30,26 +30,28 @@
   }
 
   .menu-btn .icon-cross {
-    display: none;
-  }
-
-  .menu-btn.is-open .icon-cross {
     display: block;
   }
 
-  .menu-btn.is-open:hover .icon-cross,
-  .menu-btn.is-open:focus .icon-cross {
-    fill: $accent-color;
-  } 
-
-  .menu-btn.is-open .icon-menu {
+  .menu-btn.is-open .icon-cross {
     display: none;
   }
 
+  .menu-btn.is-open .icon-menu {
+    display: block;
+  }
+
+  .menu-btn .icon-menu {
+    display: none;
+  }
+
+  .menu-btn:hover .icon-cross,
+  .menu-btn:focus .icon-cross {
+    fill: $accent-color;
+  } 
+  
   .menu-btn:hover .icon-menu,
   .menu-btn:focus .icon-menu {
     fill: $accent-color;
   }
-
 }
-  

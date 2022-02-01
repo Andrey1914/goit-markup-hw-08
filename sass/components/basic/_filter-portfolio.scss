@@ -1,0 +1,38 @@
+.section {
+  &__visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+}
+
+.filter {
+  &__button {
+    font-family: $primary-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: $color-of-headers;
+    background: #f5f4fa;
+    border: none;
+    padding: 6px 22px 6px 22px;
+    border-radius: 4px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background-color 250ms $timing-function, box-shadow 250ms $timing-function,
+      color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: $accent-color;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+

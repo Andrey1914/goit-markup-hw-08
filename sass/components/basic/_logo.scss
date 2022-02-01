@@ -1,0 +1,25 @@
+.logo {
+  font-family: $secondary-font;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: $color-of-headers;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &__text {
+    color: $accent-color;
+  }
+
+  &--footer-logo {
+    display: block;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    color: $logo-footer-color;
+  }
+}

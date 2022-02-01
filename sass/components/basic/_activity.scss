@@ -1,5 +1,4 @@
 .activity {
-  padding-top: 0;
   z-index: 1;
 
   &__list {
@@ -54,11 +53,5 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $color-of-headers-secondary;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 1199px) {
-  .activity {
-    display: none;
   }
 }

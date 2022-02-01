@@ -1,5 +1,4 @@
 .container-contact {
-  // margin-left: auto;
   margin-top: 32px;
 }
 
@@ -7,8 +6,6 @@
   display: flex;
 
   &__item {
-    // margin-right: 50px;
-
     &:last-child {
       margin-right: 0;
     }
@@ -70,52 +67,5 @@
 
   &__link:focus &__phone-icon {
     fill: $accent-color;
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .container-contact, .contact-info {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact-info {
-    flex-direction: column;
-
-    &__item {
-      display: flex;
-    }
-
-    &__item:not(:last-child) {
-      margin-bottom: 10px;
-    }
-
-    &__link {
-      font-size: 12px;
-      line-height: 14px;
-    }
-
-    &__mail-icon {
-      width: 14px;
-      height: 10px;
-    }
-
-    &__mail-icon,
-    &__phone-icon {
-      margin-right: 8px;
-    }
-
-    &__phone-icon {
-      width: 10px;
-      height: 14px; 
-    }
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container-contact {
-    margin-top: 21px;
-    margin-bottom: 21px;
   }
 }

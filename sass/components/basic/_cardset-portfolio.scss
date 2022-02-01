@@ -1,14 +1,6 @@
 .cardset {
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin-left: -30px;
-  // margin-bottom: -30px;
-
   &__item {
-    // flex-basis: calc(100% / 3 - 30px);
     background: $page-bg-color;
-    // margin-left: 30px;
-    // margin-bottom: 30px;
   }
 
   &__link {
@@ -82,35 +74,4 @@
     letter-spacing: 0.03em;
     color: $text-color;
   }
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .cardset {
-    &__link {
-      margin-bottom: 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .cardset {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-
-    &__item {
-      flex-basis: calc((100% - 4 * 15px) / 2);
-      margin: 15px;
-    }
-
-    &__link {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    &__meta {
-      flex-grow: 1;
-    }
-  } 
 }
