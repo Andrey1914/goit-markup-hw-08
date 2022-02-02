@@ -1,18 +1,32 @@
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .backdrop {
+    z-index: 4;
+    padding: 15px;
+    overflow-y: scroll;
+  }
+  
+  .modal {
+    z-index: 5;
+    width: 280px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1199px) {
   .backdrop {
     z-index: 3;
     padding: 93px 15px;
     overflow-y: scroll;
   }
-  
+
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
   }
-}
-  
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+
   .form {
+    z-index: 5;
+    background-color: $page-bg-color;
     &__label {
       font-size: 12px;
       line-height: 14px;
@@ -21,6 +35,7 @@
     }
   
     &__label--text {
+      margin-left: 25px;
       margin-bottom: 0;
     }
 
@@ -29,8 +44,13 @@
     }
 
     &__checkbox {
-      width: 370px;
+      max-width: 370px;
       height: 15px;
+    }
+
+    &__checkbox-input:checked + &__icon-checkbox {
+      background-color: $accent-color;
+      border-color: transparent;
     }
   }
 }

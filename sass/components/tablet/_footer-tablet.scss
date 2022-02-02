@@ -4,6 +4,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+      align-items: baseline;
     }
   
     &__box-adress {
@@ -19,6 +20,10 @@
     &__form {
       display: flex;
       flex-direction: column;
+    }
+
+    &__form-input {
+      width: 450px;
     }
   }
 }
