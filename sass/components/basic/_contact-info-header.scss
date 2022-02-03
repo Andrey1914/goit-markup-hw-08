@@ -1,23 +1,8 @@
-.container-contact {
-  margin-top: 32px;
-}
-
 .contact-info {
   display: flex;
 
-  &__item {
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
   &__link {
     font-family: $primary-font;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0.02em;
-    text-decoration: none;
     color: $text-color;
     transition: color 250ms $timing-function;
 
@@ -27,23 +12,9 @@
     }
   }
 
-  &__mail-icon {
-    fill: $text-color;
-    margin-right: 10px;
-    width: 16px;
-    height: 12px;
-    cursor: pointer;
-    transition: fill 250ms $timing-function;
-
-    &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
-  }
-
+  &__mail-icon,
   &__phone-icon {
     fill: $text-color;
-    margin-right: 10px;
     cursor: pointer;
     transition: fill 250ms $timing-function;
 
@@ -53,18 +24,9 @@
     }
   }
 
-  &__link:hover &__mail-icon {
-    fill: $accent-color;
-  }
-
-  &__link:focus &__mail-icon {
-    fill: $accent-color;
-  }
-
-  &__link:hover &__phone-icon {
-    fill: $accent-color;
-  }
-
+  &__link:hover &__mail-icon,
+  &__link:focus &__mail-icon,
+  &__link:hover &__phone-icon,
   &__link:focus &__phone-icon {
     fill: $accent-color;
   }

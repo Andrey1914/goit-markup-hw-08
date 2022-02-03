@@ -1,6 +1,6 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .cardset {
-    &__link {
+    &__item:not(:last-child) {
       margin-bottom: 30px;
     }
   }

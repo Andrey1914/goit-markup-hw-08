@@ -47,10 +47,5 @@
       max-width: 370px;
       height: 15px;
     }
-
-    &__checkbox-input:checked + &__icon-checkbox {
-      background-color: $accent-color;
-      border-color: transparent;
-    }
   }
 }

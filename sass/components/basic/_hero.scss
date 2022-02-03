@@ -9,11 +9,10 @@
     url('../images/img-6.jpg'); 
 
   &__title {
+    font-family: $primary-font;
     margin-left: auto;
     margin-right: auto;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
