@@ -193,12 +193,11 @@ body.modal-open {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1600px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-6.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-6.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .hero__title {
@@ -525,7 +524,6 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
   padding: 0;
 }
 
@@ -536,12 +534,6 @@ body.modal-open {
 
 .activity__item:last-child {
   margin-right: 0;
-}
-
-.activity__image {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .activity__title {
@@ -1156,6 +1148,20 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .hero {
+    max-width: 767px;
+    background-image: url("../images/mobile/hero-m1x.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 0px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 0px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 0px) and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/mobile/hero-m2x.jpg");
+  }
+}
+
 @media screen and (min-width: 0px) and (max-width: 1199px) {
   .btn--subscription {
     margin-left: auto;
@@ -1435,6 +1441,20 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .hero {
+    max-width: 1199px;
+    background-image: url("../images/tablet/hero-t1x.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/tablet/hero-t2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .experience {
     display: -webkit-box;
@@ -1630,10 +1650,21 @@ body.modal-open {
 }
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    background-image: url("../images/tablet/hero-t1x.jpg");
+    background-size: cover;
+  }
   .hero__title {
     font-size: 44px;
     line-height: 1.4;
     width: 696px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/tablet/hero-t2x.jpg");
   }
 }
 

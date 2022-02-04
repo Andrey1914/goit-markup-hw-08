@@ -3,7 +3,6 @@
 
   &__list {
     display: flex;
-    list-style: none;
     padding: 0;
   }
 
@@ -14,12 +13,6 @@
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  &__image {
-    display: block;
-    width: 100%;
-    height: auto;
   }
 
   &__title {

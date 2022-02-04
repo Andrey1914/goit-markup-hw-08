@@ -2,10 +2,26 @@
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
-    
+
     &__title {
       font-size: 26px;
       line-height: 1.6;
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .hero {
+    max-width: 767px;
+    background-image: url('../images/mobile/hero-m1x.jpg');
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url('../images/mobile/hero-m2x.jpg');
     }
   }
 }

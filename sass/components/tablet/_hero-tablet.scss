@@ -1,13 +1,8 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .hero {
-    max-width: 1600px;
+    max-width: 1199px;
     background-image: url('../images/tablet/hero-t1x.jpg');
     background-size: cover;
-    &__title {
-      font-size: 44px;
-      line-height: 1.4;
-      width: 696px;
-    }
   }
 
   @media (min-device-pixel-ratio: 2),
