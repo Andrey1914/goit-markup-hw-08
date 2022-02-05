@@ -1,23 +1,19 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .experience {
-    &__item {
+    &__item:not(:last-child) {
       margin-bottom: 30px;
-    }
-
-    &__item:last-child {
-      margin-bottom: 0;
     }
 
     &__title {
       text-align: center;
     }
-  }  
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .experience {
     &__item {
-      width: 450px;
+      max-width: 480px;
     }
   }
 }

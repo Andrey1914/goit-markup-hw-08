@@ -4,7 +4,7 @@
     padding: 15px;
     overflow-y: scroll;
   }
-  
+
   .modal {
     z-index: 5;
     width: 280px;
@@ -20,8 +20,8 @@
   }
 
   .modal {
-    max-width: 450px;
-    max-height: 609px;
+    width: 450px;
+    height: 609px;
   }
 
   .form {
@@ -33,19 +33,13 @@
       letter-spacing: 0.03em;
       color: $text-color;
     }
-  
-    &__label--text {
-      margin-left: 25px;
-      margin-bottom: 0;
+
+    &__checkbox {
+      height: 15px;
     }
 
     &__icon-checkbox {
-      margin-right: 8px;
-    }
-
-    &__checkbox {
-      max-width: 370px;
-      height: 15px;
+      margin-right: 7px;
     }
   }
 }

@@ -1,4 +1,8 @@
 .experience {
+  &__item {
+    margin-right: auto;
+    margin-left: auto;
+  }
   &__background-icon {
     display: flex;
     justify-content: center;
@@ -23,6 +27,5 @@
     letter-spacing: 0.03em;
     color: $color-of-headers;
     margin-bottom: 10px;
-  } 
+  }
 }
-

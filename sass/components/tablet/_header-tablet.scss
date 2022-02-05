@@ -1,8 +1,8 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 768px;
+    max-width: 1199px;
   }
-  
+
   .container-hedear {
     justify-content: space-between;
     height: 80px;
@@ -20,4 +20,3 @@
     display: none;
   }
 }
-

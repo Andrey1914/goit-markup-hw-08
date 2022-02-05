@@ -1,7 +1,7 @@
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    background-image: url('../images/tablet/hero-t1x.jpg');
+    background-image: url('../images/desktop/hero-d1x.jpg');
     background-size: cover;
     &__title {
       font-size: 44px;
@@ -14,7 +14,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../images/tablet/hero-t2x.jpg');
+      background-image: url('../images/desktop/hero-d2x.jpg');
     }
   }
 }
