@@ -5,14 +5,14 @@
   }
 
   .container {
-    width: 100%; 
+    width: 100%;
   }
 
   .container-hedear {
     width: 100%;
     z-index: 1;
   }
-  
+
   .menu-btn {
     position: absolute;
     z-index: 3;
@@ -49,11 +49,10 @@
   .menu-btn:hover .icon-cross,
   .menu-btn:focus .icon-cross {
     fill: $accent-color;
-  } 
-  
+  }
+
   .menu-btn:hover .icon-menu,
   .menu-btn:focus .icon-menu {
     fill: $accent-color;
   }
 }
-

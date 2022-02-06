@@ -13,7 +13,12 @@
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .hero {
     max-width: 767px;
-    background-image: url('../images/mobile/hero-m1x.jpg');
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/mobile/hero-m1x.jpg');
     background-size: cover;
   }
 
@@ -21,7 +26,12 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../images/mobile/hero-m2x.jpg');
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/mobile/hero-m2x.jpg');
     }
   }
 }

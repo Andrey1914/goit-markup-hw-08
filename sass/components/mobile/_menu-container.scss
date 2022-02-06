@@ -12,10 +12,14 @@
     padding: 48px 40px;
     transition: opacity 250ms $timing-function;
     pointer-events: none;
+    visibility: hidden;
 
     &.is-open {
       opacity: 1;
-      pointer-events: visible;
+      pointer-events: initial;
+      position: fixed;
+      // overflow-y: scroll;
+      visibility: visible;
     }
 
     .menu-nav {
@@ -77,8 +81,14 @@
 
 @media screen and (min-width: 0px) and (max-width: 479px) {
   .social-networks {
-    &__item:not(:last-child) {
-      margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px;
+
+    &__item {
+      flex-basis: calc((100% - 4 * 10) / 2);
+      margin: 10px;
     }
 
     &__link {

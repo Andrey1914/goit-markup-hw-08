@@ -21,11 +21,6 @@ a {
   text-decoration: none;
 }
 
-:focus {
-  outline: 4px solid rgba(33, 150, 243, 0.5);
-  border-radius: 3px;
-}
-
 body.modal-open {
   overflow: hidden;
 }
@@ -196,8 +191,6 @@ body.modal-open {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .hero__title {
@@ -927,7 +920,6 @@ body.modal-open {
 
 .cardset__thumb-text {
   position: absolute;
-  top: 63px;
   left: 24px;
   right: 24px;
   font-family: "Roboto", sans-serif;
@@ -1046,10 +1038,13 @@ body.modal-open {
     -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
+    visibility: hidden;
   }
   .menu-container.is-open {
     opacity: 1;
-    pointer-events: visible;
+    pointer-events: initial;
+    position: fixed;
+    visibility: visible;
   }
   .menu-container .menu-nav {
     margin-bottom: 302px;
@@ -1097,8 +1092,21 @@ body.modal-open {
 }
 
 @media screen and (min-width: 0px) and (max-width: 479px) {
-  .social-networks__item:not(:last-child) {
-    margin-right: 10px;
+  .social-networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: -10px;
+  }
+  .social-networks__item {
+    -ms-flex-preferred-size: calc((100% - 4 * 10) / 2);
+        flex-basis: calc((100% - 4 * 10) / 2);
+    margin: 10px;
   }
   .social-networks__link {
     font-family: "Roboto", sans-serif;
@@ -1150,14 +1158,16 @@ body.modal-open {
 @media screen and (min-width: 0px) and (max-width: 767px) {
   .hero {
     max-width: 767px;
-    background-image: url("../images/mobile/hero-m1x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/hero-m1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero-m1x.jpg");
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 0px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 0px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 0px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/mobile/hero-m2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/hero-m2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero-m2x.jpg");
   }
 }
 
@@ -1188,8 +1198,8 @@ body.modal-open {
     overflow-y: scroll;
   }
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
   }
   .form {
     z-index: 5;
@@ -1269,7 +1279,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 767px) {
   .clients__title {
     margin-bottom: 30px;
   }
@@ -1355,6 +1365,9 @@ body.modal-open {
   .cardset__item:not(:last-child) {
     margin-bottom: 30px;
   }
+  .cardset__thumb-text {
+    top: 77px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1432,17 +1445,19 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     max-width: 1199px;
-    background-image: url("../images/tablet/hero-t1x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/hero-t1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-t1x.jpg");
     background-size: cover;
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/tablet/hero-t2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/hero-t2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-t2x.jpg");
   }
 }
 
@@ -1581,6 +1596,9 @@ body.modal-open {
             flex-direction: column;
     height: 100%;
   }
+  .cardset__thumb-text {
+    top: 49px;
+  }
   .cardset__meta {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -1643,7 +1661,8 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    background-image: url("../images/desktop/hero-d1x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desktop/hero-d1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero-d1x.jpg");
     background-size: cover;
   }
   .hero__title {
@@ -1655,7 +1674,8 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/desktop/hero-d2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desktop/hero-d2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero-d2x.jpg");
   }
 }
 
@@ -1793,6 +1813,9 @@ body.modal-open {
     -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
         flex-basis: calc((100% - 6 * 15px) / 3);
     margin: 15px;
+  }
+  .cardset__thumb-text {
+    top: 63px;
   }
 }
 /*# sourceMappingURL=main.css.map */

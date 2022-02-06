@@ -21,11 +21,6 @@ a {
   text-decoration: none;
 }
 
-:focus {
-  outline: 4px solid rgba(33, 150, 243, 0.5);
-  border-radius: 3px;
-}
-
 body.modal-open {
   overflow: hidden;
 }
