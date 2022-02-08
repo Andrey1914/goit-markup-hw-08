@@ -955,16 +955,15 @@ body.modal-open {
   color: #757575;
 }
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .page-header {
     padding-top: 16px;
     padding-bottom: 16px;
   }
   .container {
-    width: 100%;
+    max-width: 480px;
   }
   .container-hedear {
-    width: 100%;
     z-index: 1;
   }
   .menu-btn {
@@ -1372,7 +1371,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    max-width: 1199px;
+    max-width: 768px;
   }
   .container-hedear {
     -webkit-box-pack: justify;
@@ -1573,14 +1572,6 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .cardset {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px;
-  }
   .cardset__item {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
@@ -1603,6 +1594,17 @@ body.modal-open {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cardset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1801,14 +1803,6 @@ body.modal-open {
 }
 
 @media screen and (min-width: 1200px) {
-  .cardset {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px;
-  }
   .cardset__item {
     -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
         flex-basis: calc((100% - 6 * 15px) / 3);

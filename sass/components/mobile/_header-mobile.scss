@@ -1,15 +1,14 @@
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .page-header {
     padding-top: 16px;
     padding-bottom: 16px;
   }
 
   .container {
-    width: 100%;
+    max-width: 480px;
   }
 
   .container-hedear {
-    width: 100%;
     z-index: 1;
   }
 
