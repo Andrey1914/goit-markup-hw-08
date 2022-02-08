@@ -18,7 +18,7 @@
       opacity: 1;
       pointer-events: initial;
       position: fixed;
-      // overflow-y: scroll;
+      overflow-y: scroll;
       visibility: visible;
     }
 
@@ -45,9 +45,9 @@
       }
     }
 
-    .current {
-      color: $accent-color;
-    }
+    // .current {
+    //   color: $accent-color;
+    // }
 
     .menu-contact {
       margin-bottom: 64px;

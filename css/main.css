@@ -979,6 +979,7 @@ body.modal-open {
     background-color: transparent;
   }
   .btn-close-menu {
+    width: 40px;
     height: 40px;
   }
   .menu-btn .icon-cross {
@@ -1043,6 +1044,7 @@ body.modal-open {
     opacity: 1;
     pointer-events: initial;
     position: fixed;
+    overflow-y: scroll;
     visibility: visible;
   }
   .menu-container .menu-nav {
@@ -1061,9 +1063,6 @@ body.modal-open {
     color: #212121;
   }
   .menu-container .menu-nav__link:hover, .menu-container .menu-nav__link:focus {
-    color: #2196f3;
-  }
-  .menu-container .current {
     color: #2196f3;
   }
   .menu-container .menu-contact {
@@ -1366,6 +1365,18 @@ body.modal-open {
   }
   .cardset__thumb-text {
     top: 77px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .cardset__thumb-text {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 }
 

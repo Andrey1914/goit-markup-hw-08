@@ -9,3 +9,17 @@
     }
   }
 }
+
+@media screen and (max-width: 479px) {
+  .cardset {
+    &__thumb-text {
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+    }
+  }
+}
