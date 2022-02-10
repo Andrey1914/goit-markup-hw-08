@@ -1,4 +1,4 @@
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .menu-container {
     opacity: 0;
     z-index: 2;
@@ -8,7 +8,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 796px;
     padding: 48px 40px;
     transition: opacity 250ms $timing-function;
     pointer-events: none;
@@ -45,10 +44,6 @@
       }
     }
 
-    // .current {
-    //   color: $accent-color;
-    // }
-
     .menu-contact {
       margin-bottom: 64px;
 
@@ -76,55 +71,31 @@
         color: $text-color;
       }
     }
-  }
-}
 
-@media screen and (min-width: 0px) and (max-width: 479px) {
-  .social-networks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: -10px;
+    .social-networks {
+      display: flex;
+      flex-wrap: wrap;
 
-    &__item {
-      flex-basis: calc((100% - 4 * 10) / 2);
-      margin: 10px;
-    }
+      &__item:not(:last-child) {
+        margin-right: 10px;
+      }
 
-    &__link {
-      font-family: $primary-font;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 1.22;
-      letter-spacing: 0.02em;
-      color: $accent-color;
-    }
-  }
-}
+      &__item:not(:last-child)::after {
+        content: '';
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transform: rotate(90deg);
+        margin-left: 10px;
+      }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .social-networks {
-    display: flex;
+      &__link {
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
 
-    &__item:not(:last-child) {
-      margin-right: 10px;
-    }
-
-    &__item:not(:last-child)::after {
-      content: '';
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      transform: rotate(90deg);
-      margin-left: 10px;
-    }
-
-    &__link {
-      font-family: $primary-font;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 1.22;
-      letter-spacing: 0.02em;
-
-      color: $accent-color;
+        color: $accent-color;
+      }
     }
   }
 }
