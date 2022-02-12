@@ -6,10 +6,10 @@
     background-color: $page-bg-color;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     padding: 48px 40px;
-    transition: opacity 250ms $timing-function;
+    transition: transform 250ms $timing-function;
     pointer-events: none;
     visibility: hidden;
 
