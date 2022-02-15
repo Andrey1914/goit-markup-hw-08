@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .menu-container {
-    opacity: 0;
+    transform: translateX(-100%);
     z-index: 2;
 
     background-color: $page-bg-color;
@@ -8,13 +8,13 @@
     top: 0;
     right: 0;
     width: 100%;
-    padding: 48px 40px;
-    transition: transform 250ms $timing-function;
+    transition: transform 250ms $timing-function,
+      visibility 250ms $timing-function;
     pointer-events: none;
     visibility: hidden;
 
     &.is-open {
-      opacity: 1;
+      transform: translateX(0%);
       pointer-events: initial;
       position: fixed;
       overflow-y: scroll;
@@ -22,12 +22,6 @@
     }
 
     .menu-nav {
-      margin-bottom: 302px;
-
-      &__item {
-        margin-bottom: 32px;
-      }
-
       &__link {
         font-family: $primary-font;
         font-weight: 500;
@@ -45,12 +39,6 @@
     }
 
     .menu-contact {
-      margin-bottom: 64px;
-
-      &__item:not(:last-child) {
-        margin-bottom: 32px;
-      }
-
       &__tel {
         font-family: $primary-font;
         font-weight: 500;
@@ -76,6 +64,10 @@
       display: flex;
       flex-wrap: wrap;
 
+      &__item {
+        margin-bottom: 10px;
+      }
+
       &__item:not(:last-child) {
         margin-right: 10px;
       }
@@ -96,6 +88,50 @@
 
         color: $accent-color;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-container {
+    padding: 30px 25px;
+  }
+
+  .menu-nav {
+    margin-bottom: 120px;
+
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+
+  .menu-contact {
+    margin-bottom: 30px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .menu-container {
+    padding: 48px 40px;
+  }
+
+  .menu-nav {
+    margin-bottom: 302px;
+
+    &__item {
+      margin-bottom: 32px;
+    }
+  }
+
+  .menu-contact {
+    margin-bottom: 64px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
     }
   }
 }
