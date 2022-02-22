@@ -1,20 +1,20 @@
-@media screen and (min-width: 0px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .backdrop {
-    z-index: 4;
+    // z-index: 4;
     padding: 15px;
     overflow-y: scroll;
   }
 
   .modal {
-    z-index: 5;
+    // z-index: 5;
     width: 280px;
     height: 609px;
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .backdrop {
-    z-index: 3;
+    // z-index: 3;
     padding: 93px 15px;
     overflow-y: scroll;
   }
@@ -25,7 +25,7 @@
   }
 
   .form {
-    z-index: 5;
+    // z-index: 5;
     background-color: $page-bg-color;
     &__label {
       font-size: 12px;
