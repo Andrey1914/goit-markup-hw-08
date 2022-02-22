@@ -6,7 +6,7 @@
       justify-content: space-around;
       align-items: baseline;
     }
-  
+
     &__box-adress {
       width: 232px;
       margin-bottom: 60px;
@@ -20,9 +20,6 @@
     &__form {
       display: flex;
       flex-direction: column;
-    }
-
-    &__form-input {
       width: 450px;
     }
   }

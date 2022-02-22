@@ -1,10 +1,38 @@
 .contact-info {
   display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
 
+  &__item:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+    }
+  }
   &__link {
     font-family: $primary-font;
     color: $text-color;
     transition: color 250ms $timing-function;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      line-height: 1.16;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+    }
 
     &:hover,
     &:focus {
@@ -17,10 +45,38 @@
     fill: $text-color;
     cursor: pointer;
     transition: fill 250ms $timing-function;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-right: 8px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
 
     &:hover,
     &:focus {
       fill: $accent-color;
+    }
+  }
+
+  &__mail-icon {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 14px;
+      height: 10px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &__phone-icon {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 10px;
+      height: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
     }
   }
 
@@ -29,5 +85,11 @@
   &__link:hover &__phone-icon,
   &__link:focus &__phone-icon {
     fill: $accent-color;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-contact {
+    margin-left: auto;
   }
 }

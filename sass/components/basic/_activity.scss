@@ -1,4 +1,7 @@
 .activity {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   // z-index: 1;
 
   &__list {
