@@ -1,4 +1,4 @@
-@media screen and (min-width: 0px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -10,7 +10,7 @@
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .hero {
     max-width: 767px;
     background-image: linear-gradient(

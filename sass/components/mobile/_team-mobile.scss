@@ -1,16 +1,16 @@
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .team {
     &__info {
       padding-bottom: 24px;
     }
-  
+
     &__item:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .team {
     &__title {
       font-size: 28px;

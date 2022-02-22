@@ -1,5 +1,6 @@
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .container-contact, .contact-info {
+@media screen and (max-width: 767px) {
+  .container-contact,
+  .contact-info {
     display: none;
   }
 }

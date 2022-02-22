@@ -116,6 +116,7 @@
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-container {
+    position: fixed;
     padding: 48px 40px;
   }
 

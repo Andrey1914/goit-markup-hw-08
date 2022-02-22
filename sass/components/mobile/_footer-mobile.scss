@@ -1,5 +1,5 @@
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .footer { 
+@media screen and (max-width: 767px) {
+  .footer {
     &__box-adress {
       width: 232px;
       margin-left: auto;
@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (min-width: 0px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .join {
     text-align: center;
   }
@@ -23,12 +23,12 @@
     &__form {
       text-align: center;
     }
-  
+
     &__form-label {
       display: block;
       margin-bottom: 20px;
     }
-  
+
     &__form-input {
       margin-bottom: 20px;
     }
