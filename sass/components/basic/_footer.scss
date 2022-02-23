@@ -3,9 +3,32 @@
   padding-bottom: 60px;
   background-color: $footer-color;
 
+  &__box {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+      position: relative;
+    }
+  }
+
   &__box-adress {
     display: flex;
     flex-direction: column;
+    width: 232px;
+    @media screen and (max-width: 767px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+      text-align: center;
+    }
   }
 
   &__contact-item {
@@ -40,6 +63,18 @@
   }
 }
 
+.box-links {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: 70px;
+  }
+}
+
 .join {
   font-weight: 700;
   font-size: 14px;
@@ -48,9 +83,26 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: $color-of-headers-secondary;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .subscription {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 93px;
+    padding-top: 12px;
+  }
+  &__form {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
   &__form-label {
     font-family: $primary-font;
     font-weight: 700;
@@ -60,6 +112,9 @@
     text-transform: uppercase;
     color: $color-of-headers-secondary;
     margin-bottom: 20px;
+    @media screen and (max-width: 1199px) {
+      display: block;
+    }
   }
 
   &__form-input {
@@ -69,6 +124,18 @@
     outline: none;
     background-color: $footer-color;
     color: $color-of-headers-secondary;
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
 
     &::placeholder {
       font-size: 16px;
@@ -78,5 +145,3 @@
     }
   }
 }
-
-
