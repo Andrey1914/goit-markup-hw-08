@@ -8,6 +8,7 @@
     top: 0;
     right: 0;
     width: 100%;
+    height: 100%;
     transition: transform 250ms $timing-function,
       visibility 250ms $timing-function;
     pointer-events: none;
@@ -143,7 +144,7 @@
   }
 
   .menu-nav {
-    margin-bottom: 120px;
+    margin-bottom: 230px;
 
     &__item {
       margin-bottom: 20px;
