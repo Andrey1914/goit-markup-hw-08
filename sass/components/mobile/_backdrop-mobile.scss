@@ -1,36 +1,31 @@
 @media screen and (max-width: 479px) {
   .backdrop {
-    // z-index: 4;
-    padding: 15px;
     overflow-y: scroll;
   }
 
   .modal {
-    // z-index: 5;
-    width: 280px;
-    height: 609px;
+    width: 300px;
+    height: 634px;
+    padding: 20px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .backdrop {
-    // z-index: 3;
-    // padding: 93px 15px;
     overflow-y: scroll;
   }
 
   .modal {
-    max-width: 450px;
-    max-height: 609px;
+    width: 450px;
+    height: 609px;
   }
 
   .form {
-    // z-index: 5;
     background-color: $page-bg-color;
     &__label {
       font-size: 12px;
       line-height: 14px;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.01em;
       color: $text-color;
     }
 
