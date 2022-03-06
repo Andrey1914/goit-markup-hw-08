@@ -1,45 +1,44 @@
-@media screen and (max-width: 479px) {
-  .backdrop {
-    overflow-y: scroll;
-  }
+// @media screen and (max-width: 479px) {
+//   // .backdrop {
+//   //   overflow-y: scroll;
+//   // }
 
-  .modal {
-    width: calc(100% - 30px);
-    // width: 300px;
-    height: 634px;
-    padding: 40px 20px;
-  }
+//   // .modal {
+//   //   width: calc(100% - 30px);
+//   //   height: 634px;
+//   //   padding: 40px 20px;
+//   // }
 
-  .form {
-    width: calc(100% - 40px);
-  }
-}
+//   .form {
+//     width: calc(100% - 40px);
+//   }
+// }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .backdrop {
-    overflow-y: scroll;
-  }
+// @media screen and (min-width: 480px) and (max-width: 1199px) {
+//   // .backdrop {
+//   //   overflow-y: scroll;
+//   // }
 
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
+//   // .modal {
+//   //   width: 450px;
+//   //   height: 609px;
+//   // }
 
-  .form {
-    background-color: $page-bg-color;
-    &__label {
-      font-size: 12px;
-      line-height: 14px;
-      letter-spacing: 0.01em;
-      color: $text-color;
-    }
+//   .form {
+//     // background-color: $page-bg-color;
+//     // &__label {
+//     //   font-size: 12px;
+//     //   line-height: 14px;
+//     //   letter-spacing: 0.01em;
+//     //   color: $text-color;
+//     // }
 
-    &__checkbox {
-      height: 15px;
-    }
+//     &__checkbox {
+//       height: 15px;
+//     }
 
-    &__icon-checkbox {
-      margin-right: 7px;
-    }
-  }
-}
+//     &__icon-checkbox {
+//       margin-right: 7px;
+//     }
+//   }
+// }

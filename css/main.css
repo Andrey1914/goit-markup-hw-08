@@ -304,6 +304,22 @@ body.modal-open {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .btn--subscription {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn--subscription {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    margin-left: 12px;
+    padding: 0;
+    margin-top: 0;
+  }
+}
 .btn:hover, .btn:focus {
   background-color: #188ce8;
 }
@@ -400,6 +416,11 @@ body.modal-open {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -420,9 +441,22 @@ body.modal-open {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
+    height: 634px;
+    padding: 40px 20px;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal {
     padding: 40px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -458,8 +492,14 @@ body.modal-open {
   position: absolute;
   left: 50%;
   top: 50%;
+  background-color: #ffffff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 479px) {
+  .form {
+    width: calc(100% - 40px);
+  }
 }
 @media screen and (min-width: 480px) {
   .form {
@@ -577,6 +617,11 @@ body.modal-open {
   color: #757575;
   cursor: pointer;
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form__checkbox {
+    height: 15px;
+  }
+}
 .form__icon-checkbox {
   position: relative;
   top: 2px;
@@ -586,6 +631,11 @@ body.modal-open {
   border: 2px solid #212121;
   border-radius: 2px;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form__icon-checkbox {
+    margin-right: 7px;
+  }
 }
 .form__icon-checkbox:focus {
   border: 2px solid #2196f3;
@@ -1481,63 +1531,5 @@ body.modal-open {
   .menu-container,
 .menu-btn {
     display: none;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .btn--subscription {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .backdrop {
-    overflow-y: scroll;
-  }
-
-  .modal {
-    width: calc(100% - 30px);
-    height: 634px;
-    padding: 40px 20px;
-  }
-
-  .form {
-    width: calc(100% - 40px);
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 1199px) {
-  .backdrop {
-    overflow-y: scroll;
-  }
-
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
-
-  .form {
-    background-color: #ffffff;
-  }
-  .form__label {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: #757575;
-  }
-  .form__checkbox {
-    height: 15px;
-  }
-  .form__icon-checkbox {
-    margin-right: 7px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .btn--subscription {
-    position: absolute;
-    top: 48px;
-    right: 0;
-    margin-left: 12px;
-    padding: 0;
-    margin-top: 0;
   }
 }/*# sourceMappingURL=main.css.map */
