@@ -564,9 +564,15 @@ body.modal-open {
 }
 .form__label--text {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .form__label--text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .form__comment {
   display: flex;
@@ -634,7 +640,7 @@ body.modal-open {
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .form__icon-checkbox {
-    margin-right: 7px;
+    margin-right: 8px;
   }
 }
 .form__icon-checkbox:focus {
